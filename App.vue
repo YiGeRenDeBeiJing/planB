@@ -16,7 +16,7 @@
 	@import "@/uni_modules/uview-ui/index.scss";
 	@import "./uni_modules/jc-tailwind/index.scss";
 	@import "static/scss/main.css";
-
+	@import "static/icon/iconfont.css";
 	body {
 		font-family: var(--font-family);
 		font-size: var(--font-size);

@@ -24,13 +24,15 @@
 			"path": "pages/api/api",
 			"style": {
 				"navigationBarTitleText": "%index.api%",
-				"enablePullDownRefresh": false
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
 			}
 		}, {
 			"path": "pages/schema/schema",
 			"style": {
 				"navigationBarTitleText": "%index.schema%",
-				"enablePullDownRefresh": false
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
 			}
 		},
 		{
@@ -49,13 +51,56 @@
 				"enablePullDownRefresh" : false,
 				"navigationStyle": "custom"
 			}
+		},
+		{
+			"path" : "pages/jdviews/jdviews",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh" : false,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "pages/recharge/recharge",
+			"style" : 
+			{
+				"navigationBarTitleText" : "账户充值",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages/withdrawal/withdrawal",
+			"style" : 
+			{
+				"navigationBarTitleText" : "账户提现",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages/account/account",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh" : false,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "pages/shell/shell",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh" : false,
+				"navigationStyle": "custom"
+			}
 		}
 	],
 	"tabBar": {
 		"color": "#7A7E83",
 		"selectedColor": "#007AFF",
 		"borderStyle": "black",
-		"backgroundColor": "#F8F8F8",
+		"backgroundColor": "#fff",
 		"list": [{
 				"pagePath": "pages/hangqing/hangqing",
 				"text": "%index.home%",

@@ -85,12 +85,18 @@
 						url:'/pages/hangqing/details?name='+this.currentMod.name
 					})
 				}
+				if(it == '简单视图模式'){
+					uni.navigateTo({
+						url:'/pages/jdviews/jdviews?name='+this.currentMod.name
+					})
+				}
+				this.show = false
 			}
 		}
 	}
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 	.nav {
 		position: sticky;
 		top: 0;

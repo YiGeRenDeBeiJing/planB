@@ -8,7 +8,7 @@
 			<view class="info svelte-1kgzcsm">10001166819 - MetaQuotes</view>
 			<view class="tag demo svelte-1s63r9n" title="模拟">模拟</view>
 		</button>
-		<view class="cell flex justify-between items-center" v-for="(it,index) in cellArr" :key="index" :style="{'border-bottom':it.botton?'2rpx solid #e8e8e8':''}">
+		<view class="cell flex justify-between items-center" v-for="(it,index) in cellArr" :key="index" :style="{'border-bottom':it.botton?'2rpx solid #e8e8e8':''}" @click="cellClick(it)">
 			<image class="flex items-center justify-center" :src="it.url" mode=""></image>
 			<view>{{it.text}}</view>
 		</view>
@@ -60,11 +60,30 @@
 					text:'关于我们'
 				}]
 			};
+		},
+		methods:{
+			cellClick(it){
+				if(it.text == '账户充值'){
+					uni.navigateTo({
+						url:'/pages/recharge/recharge'
+					})
+				}
+				if(it.text == '交易账号'){
+					uni.navigateTo({
+						url:'/pages/account/account'
+					})
+				}
+				if(it.text == '账户提现'){
+					uni.navigateTo({
+						url:'/pages/withdrawal/withdrawal'
+					})
+				}
+			}
 		}
 	}
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 	.set-content {
 		padding: 0px 8rpx;
 

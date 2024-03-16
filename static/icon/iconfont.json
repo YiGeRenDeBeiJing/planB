@@ -6,6 +6,20 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "658013",
+      "name": "复制",
+      "font_class": "fuzhi",
+      "unicode": "e656",
+      "unicode_decimal": 58966
+    },
+    {
+      "icon_id": "23816939",
+      "name": "icon_yumin",
+      "font_class": "global-search",
+      "unicode": "e66a",
+      "unicode_decimal": 58986
+    },
+    {
       "icon_id": "1718325",
       "name": "日历3",
       "font_class": "rili",
